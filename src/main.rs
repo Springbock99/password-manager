@@ -1,3 +1,5 @@
+mod storage;
+
 use clap::{Arg, Command};
 use rand::Rng;
 use rand::distributions::Uniform;
