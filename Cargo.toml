@@ -5,4 +5,7 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.0", features = ["derive"] } 
-rand = "0.8"                                      
+rand = "0.8"    
+mysql = "20.1.0"      
+dotenv = "0.15"
+
