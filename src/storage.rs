@@ -25,9 +25,6 @@ pub struct Entry {
 
 fn main() {
 
-let password = env::var("DB_PASSWORD").expect("DB_PASSWORD must be set");
-let connection_string = format!("mysql://rust_app:{}@localhost:3306/password_manager", password);
-
 pub async fn connect_db() -> Result<mysql::Pool, mysql::Error> {
   dotenv().ok();
   let password = env::var("DB_PASSWORD").expect("DB_PASSWORD must be set");
